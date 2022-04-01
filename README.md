@@ -46,13 +46,29 @@ Finally we set the final formatting to the table where the results will be print
 
 ![](resources/extra_resources/Formatting_timer.PNG)
 
-The results of the analysis for 2017 and 2018 are:
+## Results
+
+### * The results of the analysis for 2017 and 2018 with the refactored VBA code are:
 
 ![](resources/extra_resources/2017.PNG)
 
 ![](resources/extra_resources/2018.PNG)
 
+------------------------------------------------------------------------------------------
 
+### * The time results with the refactored VBA code are:
+
+![](resources/VBA_Challenge_2017.PNG)
+
+![](resources/VBA_Challenge_2018.PNG)
+
+------------------------------------------------------------------------------------------
+
+### * The time results with the original VBA code are:
+
+![](resources/extra_resources/OC_2017.PNG)
+
+![](resources/extra_resources/OC_2018.PNG)
 
 
 

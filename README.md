@@ -46,6 +46,13 @@ Finally we set the final formatting to the table where the results will be print
 
 ![](resources/extra_resources/Formatting_timer.PNG)
 
+The results of the analysis for 2017 and 2018 are:
+
+![](resources/extra_resources/2017.PNG)
+
+![](resources/extra_resources/2018.PNG)
+
+
 
 
 

@@ -76,13 +76,15 @@ Finally we set the final formatting to the table where the results will be print
 As we can see in the previous images, the time from the original code is less than the time from refactored code.
 A reason for this could be that in the original code we established the values for the tickers array, while in the refactored code a for loop was implemented to add unique values to the dictionary. This means that we loop through the whole dataset twice and therefore the time increases.
 
-The time for the refactored code it's greater than the original code but it has a great advantage and it's that it works for an "x" quantity of tickers, while the original code only works for the 12 tickers declared.
+Although the time of the refactored code it's greater than the original code it has a great advantage, and it's that it works for any quantity of tickers, while the original code only works for the quantity tickers declared.
 
 ## Summary
 
-* An advantage of refactoring a code is that the purpose of the code is stablished and then you can start from there to develop an efficient way to improve it and also, refactoring codes demonstrate that there are many ways to solve a problem and it allows you to learn another ways to program.
+* An advantage of refactoring a code is that the purpose of the code is stablished and you can start from there to improve and make it more efficient and also, refactoring codes demonstrate that there are many ways to solve a problem and it allows you to learn another ways of programming.
 
 * A disadvantage could be that if the code is not readable or not well commented, you can struggle to understand why it's structured the way it is. This could be time consuming and stressing.
+
+* In conclusion, refactoring code is a common practice in the programming world and, as a Data Analyst you have to be prepared to work with existing codes in order to improve them. In this case of "Analyzing stocks" the refactored code runs a bit slower than the original but it's more robust.
 
 
 

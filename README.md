@@ -48,7 +48,8 @@ Finally we set the final formatting to the table where the results will be print
 
 ## Results
 
-### * The results of the analysis for 2017 and 2018 with the refactored VBA code are:
+
+###  The results of the analysis for 2017 and 2018 with the refactored VBA code are:
 
 ![](resources/extra_resources/2017.PNG)
 
@@ -56,7 +57,7 @@ Finally we set the final formatting to the table where the results will be print
 
 ------------------------------------------------------------------------------------------
 
-### * The time results with the refactored VBA code are:
+###  The time results with the refactored VBA code are:
 
 ![](resources/VBA_Challenge_2017.PNG)
 
@@ -64,11 +65,29 @@ Finally we set the final formatting to the table where the results will be print
 
 ------------------------------------------------------------------------------------------
 
-### * The time results with the original VBA code are:
+###  The time results with the original VBA code are:
 
 ![](resources/extra_resources/OC_2017.PNG)
 
 ![](resources/extra_resources/OC_2018.PNG)
+
+------------------------------------------------------------------------------------------
+
+As we can see in the previous images, the time from the original code is less than the time from refactored code.
+A reason for this could be that in the original code we established the values for the tickers array, while in the refactored code a for loop was implemented to add unique values to the dictionary. This means that we loop through the whole dataset twice and therefore the time increases.
+
+The time for the refactored code it's greater than the original code but it has a great advantage and it's that it works for an "x" quantity of tickers, while the original code only works for the 12 tickers declared.
+
+## Summary
+
+* An advantage of refactoring a code is that the purpose of the code is stablished and then you can start from there to develop an efficient way to improve it and also, refactoring codes demonstrate that there are many ways to solve a problem and it allows you to learn another ways to program.
+
+* A disadvantage could be that if the code is not readable or not well commented, you can struggle to understand why it's structured the way it is. This could be time consuming and stressing.
+
+
+
+
+
 
 
 

@@ -1,1 +1,2 @@
-# stocks-analysis
+# Analyzing stocks for investment
+

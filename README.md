@@ -22,6 +22,7 @@ The program has to be able to analize any year that we require, therefore a vari
 ![](resources/extra_resources/Variables.PNG)
 
 It's required to know the number of the last row with data, to get this information we use the .count property for rows that provides the total amount of rows in the range, then we apply the .end(xlUP) property that indicates VBA to move from the final row in the sheet (1,048,576) up to the first row with data, that results to be the last row in the dataset and finally the .row property is applied to return the number of the first row of the first area in the range. We have to make sure to activate the worksheet where the code will count the amount of rows. 
+
 The program has to be able to analize a random number of tickers, therefore a dictionary was implemented to add unique values of tickers to it.
 A for loop is implemented to iterate through each row of the data and add values of tickers in the dictionary, the method .exists returns True if a specified key exists in the dictionary and pass to the next iteration, but if it returns False we proceed to add the value. Dictionaries add key,item values and therefore a "j" variable was declared to use it as the item.
 Finally we calculate the amount of unique values with the .count property to determine the number of items in the dictionary.

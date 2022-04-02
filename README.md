@@ -80,7 +80,7 @@ Although the time of the refactored code it's greater than the original code it 
 
 ## Summary
 
-* An advantage of refactoring a code is that the purpose of the code is stablished and you can start from there to improve and make it more efficient and also, refactoring codes demonstrate that there are many ways to solve a problem and it allows you to learn another ways of programming.
+* An advantage of refactoring a code is that the purpose of the code is stablished and you can start from there to improve and make it more efficient and also, refactoring codes demonstrate that there are different paths to solve a problem and it allows you to learn another ways of programming.
 
 * A disadvantage could be that if the code is not readable or not well commented, you can struggle to understand why it's structured the way it is. This could be time consuming and stressing.
 

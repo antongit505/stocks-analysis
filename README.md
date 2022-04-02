@@ -24,7 +24,7 @@ The program has to be able to analize any year that we require, therefore a vari
 It's required to know the number of the last row with data, to get this information we use the .count property for rows that provides the total amount of rows in the range, then we apply the .end(xlUP) property that indicates VBA to move from the final row in the sheet (1,048,576) up to the first row with data, that results to be the last row in the dataset and finally the .row property is applied to return the number of the first row of the first area in the range. We have to make sure to activate the worksheet where the code will count the amount of rows. 
 
 The program has to be able to analize a random number of tickers, therefore a dictionary was implemented to add unique values of tickers to it.
-A for loop is implemented to iterate through each row of the data and add values of tickers in the dictionary, the method .exists returns True if a specified key exists in the dictionary and pass to the next iteration, but if it returns False we proceed to add the value. Dictionaries add key,item values and therefore a "j" variable was declared to use it as the item.
+A for loop is used to iterate through each row of the data and add values of tickers in the dictionary, the method .exists returns True if a specified key exists in the dictionary and pass to the next iteration, but if it returns False we proceed to add the value. Dictionaries add key,item values and therefore a "j" variable was declared to use it as the item.
 Finally we calculate the amount of unique values with the .count property to determine the number of items in the dictionary.
 The code is shown below.
 
@@ -32,12 +32,12 @@ The code is shown below.
 
 Three arrays are created to store the results for the Total Daily Volume, Starting Price and Ending Price. To store data in these arrays, we create an index to iterate through them. We make sure to activate the worksheet where we'll be analyzing the data.
 
-Two nested for loops are used, the first for loop interates from 0 to (x-1) which is the dimension of the arrays created. Below this for loop we initialize the array for Total Daily Volume with 0 because when the code finish to iterate through all the rows (second for loop) for the currect ticker in the tickerIndex position, the next ticker in the position tickerIndex + 1 will have it's Total Daily Volume at 0. As mentioned before, the second for loop iterate through all the rows of data and compare the actual cell with the current ticker in the dictionary, if the condition it's True it proceed to add the Volume. To select the start and ending price, the conditions are shown below. 
+Two nested for loops are used, the first for loop interates from 0 to (x-1) which is the dimension of the arrays created. The reason for x-1 is because arrays start at index = 0 and the x represents the amount of unique tickers, so if we iterate to x instead of x-1 the array will have an extra espace to store data and it will show an error. Below this for loop we initialize the array for Total Daily Volume with 0 because when the code finish to iterate through all the rows, which happens in thesecond for loop, for the currect ticker in the tickerIndex position, the next ticker in the position tickerIndex + 1 will have it's Total Daily Volume at 0. As mentioned before, the second for loop iterate through all the rows of data and compare the actual cell with the current ticker in the dictionary, if the condition it's True it proceed to add the Volume. To select the start and ending price, the conditions are shown below. 
 This procedure will continue until the index reach the dimension of the arrays (x-1).
 
 ![](resources/extra_resources/Storing_outcomes.PNG)
 
-We proceed to show the results in the "All stocks analysis" sheet. The table starts at row 4, so we make sure that the results starting printing in the right cells.
+We proceed to show the results in the "All stocks analysis" sheet. The table starts at row 4, so we make sure that the results start printing in the right cells.
 To show the results stored in the arrays, another for loop is implemented to iterate through each key in the dictionary and then the index "i" is increased at each iteration for the other arrays. Also the code to format the results in colors is used, using the condition for values greater than 0 set it green and less than 0 set it to red. To calculate the Yearly Return we subtract the (ending_price-starting_price)/starting_price as shown below.
 
 ![](resources/extra_resources/Print_results.PNG)
@@ -73,7 +73,7 @@ Finally we set the final formatting to the table where the results will be print
 
 ------------------------------------------------------------------------------------------
 
-As we can see in the previous images, the time from the original code is less than the time from refactored code.
+As we can see in the previous images, the time from the original code is less than the time from the refactored code.
 A reason for this could be that in the original code we established the values for the tickers array, while in the refactored code a for loop was implemented to add unique values to the dictionary. This means that we loop through the whole dataset twice and therefore the time increases.
 
 Although the time of the refactored code it's greater than the original code it has a great advantage, and it's that it works for any quantity of tickers, while the original code only works for the quantity tickers declared.
@@ -84,7 +84,7 @@ Although the time of the refactored code it's greater than the original code it 
 
 * A disadvantage could be that if the code is not readable or not well commented, you can struggle to understand why it's structured the way it is. This could be time consuming and stressing.
 
-* In conclusion, refactoring code is a common practice in the programming world and, as a Data Analyst you have to be prepared to work with existing codes in order to improve them. In this case of "Analyzing stocks" the refactored code runs a bit slower than the original but it's more robust.
+* In conclusion, refactoring code is a common practice in the programming world and, as a Data Analyst, you have to be prepared to work with existing codes in order to improve them. In this case of "Analyzing stocks" the refactored code runs a bit slower than the original but it's more robust.
 
 
 

@@ -56,7 +56,7 @@ Finally we set the final formatting to the table where the results will be print
 ![](resources/extra_resources/2018.PNG)
 
 The results from above shows that in 2017 the majority of companies did well regarding their yearly return. Focusing on DAQO New Energy Corp (DQ), their yearly return was 199.4%, which means that their stock price by the end of the year was almost double than at the beginning. 
-For 2018 only two companies did well with more than 80% of growth for their yearly return, and focusin on DQ their yearly return dropped at -62%.
+For 2018 only two companies did well with more than 80% of growth for their yearly return, and focusing on DQ their yearly return dropped at -62%.
 With this information, the financier could recommend to his clients to diversify their funds to companies like RUN that showed a considerable increase from 2017 to 2018 and ENPH which decreased from 2017 to 2018 but still showed positive results. It's recommended to gather more information to understand their stocks historical behaviour.
 
 ------------------------------------------------------------------------------------------
